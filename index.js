@@ -74,3 +74,18 @@ function writeToFile(data) {
 
 }
 
+// Function to initialize app
+function init() {
+    inquire.prompt(
+        questions
+    ).then(answers => {
+        console.log(answers);
+        console.log(answers.title);
+        const templateGenerator = generateMarkdown(answers);
+        console.log(templateGenerator);
+        writeToFile(templateGenerator);
+    })
+};
+
+// Function call to initialize app
+init();
