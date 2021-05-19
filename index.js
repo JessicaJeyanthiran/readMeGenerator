@@ -65,14 +65,14 @@ const questions = [
 
 ];
 
-// TODO: Create a function to write README file
+// Function to write README file
 function writeToFile(data) {
     fs.writeFile ("README.md", data, err => {
         if (err) throw err;
         console.log ("Your file has been created")
     })
 
-}
+};
 
 // Function to initialize app
 function init() {
