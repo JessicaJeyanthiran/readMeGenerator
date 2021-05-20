@@ -1,7 +1,7 @@
 // Packages needed for this application
 const inquire = require ("inquirer");
 const generateMarkdown = require ("./utils/generateMarkdown");
-console.log(generateMarkdown);
+// console.log(generateMarkdown);
 const fs = require ("fs");
 
 // Array of questions for user input
@@ -18,7 +18,7 @@ const questions = [
 },
 {
     type: "input",
-    name: "table of contents",
+    name: "tableOfContents",
     message: "Table of Contents",
 },
 {
@@ -31,15 +31,15 @@ const questions = [
     name: "usage",
     message: "How is the app used? Give instructions.",
 },
-{
-    type: "list",
-    name: "liscence",
-    message: "What liscence is being used (ie. MIT)?",
-},
+// {
+//     type: "list",
+//     name: "liscence",
+//     message: "What liscence is being used (ie. MIT)?",
+// },
 {
     type: "input",
     name: "contributing",
-    message: "Who contributed tho this project?",
+    message: "Who contributed to this project?",
 },
 
 {
