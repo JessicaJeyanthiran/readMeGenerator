@@ -2,8 +2,6 @@
 
   ## Description 
   This app allows developers to dynamically create a professional README.md file 
-
-  ## Table of Contents
   
   ## Table of Contents
   * [Installation](#installation)
